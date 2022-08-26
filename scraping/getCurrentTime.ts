@@ -1,4 +1,4 @@
-const getTimeJapan = (): String => {
+const getTimeJapan = (): string => {
   const timeString = new Date().toLocaleString("ja-JA", {
     timeZone: "Japan",
   });
@@ -9,7 +9,7 @@ const getTimeJapan = (): String => {
   return `${addZeros(hour)}:${addZeros(minute)}`;
 };
 
-const addZeros = (unitString: number): string => {
+export const addZeros = (unitString: number): string => {
   if (unitString < 10) {
     return `0${unitString}`;
   }

@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <b>次の新幹線へようこそ！</b>!
         </h1>
-        <Image src={"/favicon.ico"} height={100} width={100} />
+        <Image src={"/favicon.ico"} height={100} width={100} priority={true} />
       </main>
 
       <div
