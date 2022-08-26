@@ -16,7 +16,7 @@ const getNextTrains = (data: NextTrains): NextTrains => {
         diffHour = diffHour - 1;
         diffMin = 60 - Number(minutesNow) + Number(minutesNext);
       }
-      const timeToShow = `${diffHour}:${addZeros(diffMin - 1)}`;
+      const timeToShow = `${diffHour}:${addZeros(diffMin)}`;
       timeUntilNextTrains.push(timeToShow);
     }
   });
