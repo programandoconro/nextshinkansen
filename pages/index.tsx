@@ -22,6 +22,7 @@ const Home: NextPage = () => {
         </h1>
         <Image src={"/favicon.ico"} height={100} width={100} priority={true} />
       </main>
+      <h5>API</h5>
       <footer className={styles.footer}>
         <div
           style={{
@@ -32,16 +33,12 @@ const Home: NextPage = () => {
             width: "100%",
           }}
         >
-          <button>
-            <Link href={"/api/hakata-hakataminami"}>
-              <a>博多駅から博多南まで</a>
-            </Link>
-          </button>
-          <button>
-            <Link href={"/api/hakataminami-hakata"}>
-              <a>博多駅から博多南まで</a>
-            </Link>
-          </button>
+          <Link href={"/api/hakata-hakataminami"}>
+            <a>博多駅から博多南まで</a>
+          </Link>
+          <Link href={"/api/hakataminami-hakata"}>
+            <a>博多駅から博多南まで</a>
+          </Link>
         </div>
       </footer>
     </div>
