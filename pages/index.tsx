@@ -22,28 +22,28 @@ const Home: NextPage = () => {
         </h1>
         <Image src={"/favicon.ico"} height={100} width={100} priority={true} />
       </main>
-
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          gap: "10px",
-          paddingBottom: "10px",
-          height: "100px",
-        }}
-      >
-        <Link href={"/api/hakata-hakataminami"}>
+      <footer className={styles.footer}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            gap: "10px",
+            paddingBottom: "10px",
+            width: "100%",
+          }}
+        >
           <button>
-            <h2>博多駅から博多南まで</h2>
+            <Link href={"/api/hakata-hakataminami"}>
+              <a>博多駅から博多南まで</a>
+            </Link>
           </button>
-        </Link>
-        <Link href={"/api/hakataminami-hakata"}>
           <button>
-            <h2>博多駅から博多南まで</h2>
+            <Link href={"/api/hakataminami-hakata"}>
+              <a>博多駅から博多南まで</a>
+            </Link>
           </button>
-        </Link>
-      </div>
-      <footer className={styles.footer}></footer>
+        </div>
+      </footer>
     </div>
   );
 };
